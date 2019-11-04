@@ -1,0 +1,70 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    setlocale(0, ""); 
+    int a, b;  /*1*/
+    cout << "Задача 1 " "\n";
+    cout << "Введите длину стороны a = "; 
+    cin >> a; 
+    cout << "введите длинну стороны b = "; 
+    cin >> b; 
+    int S = a * b; 
+    cout << "Площадь прямоугольника S = " << S << endl;
+    int P =2 * ( a + b); 
+    cout << "Периметр прямоугольника P = " << P << endl;
+     cout << "Задача 2 " "\n";
+    float d;  /*2*/
+    cout << "Введите диаметр окружности d = "; 
+    cin >> d; 
+    float L = 3.14 * d; 
+    cout << "Длина окружности = " << L << endl;
+    cout << "Задача 3 " "\n";
+    float c, e;
+     cout << "Введите числовое значение a = "; 
+    cin >> c; 
+    cout << "Введите числовое значение b = "; 
+    cin >> e; 
+    float SR = (c+e)/2;
+    cout << "Среднее арифметическое a и b = " << SR << endl;
+    cout << "Задача 4 " "\n";
+    float m, n;
+     cout << "Введите числовое значение m = "; 
+    cin >> m; 
+    cout << "Введите числовое значение n = "; 
+    cin >> n; 
+    float SUM = m*m+n*n ; 
+    float RAZN = m*m-n*n;
+    float UMN = m*m*n*n;
+    float DEL= (m*m)/(n*n);
+
+    cout << "Сумма квадратов= " << SUM << endl;
+    cout << "Разность квадратов= " << RAZN << endl;
+    cout << "Произведение квадратов= " << UMN << endl;
+    cout << "Частное квадратов= " << DEL << endl;
+    cout << "Задача 5 " "\n";
+    int l, o;
+     cout << "Введите числовое значение l = "; 
+    cin >> l; 
+    cout << "Введите числовое значение o = "; 
+    cin >> o;
+    int SUM1 = abs(l)+abs(o); 
+    int RAZN1 = abs(l)-abs(o);
+    int UMN1 = abs(l)*abs(o);
+    int DEL1= abs(l)/abs(o);
+
+    cout << "Сумма модулей= " << SUM1 << endl;
+    cout << "Разность модулей= " << RAZN1 << endl;
+    cout << "Произведение модулей= " << UMN1 << endl;
+    cout << "Частное модулей= " << DEL1 << endl;
+
+
+
+
+
+
+
+    return 0; 
+}
