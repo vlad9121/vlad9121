@@ -1,0 +1,91 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <stdio.h>
+using namespace std; 
+
+int main()
+{
+    setlocale(0, "");
+    float A, B, C, x, y, k;
+    cout << "Задача 1 "<< '\n';
+    cout << "Введите значение A = "; 
+    cin >> A;
+    cout << "Введите значение B = "; 
+    cin >> B;
+    x = A;
+    A = B;
+    B = x;
+    cout << "A = " << A << endl;
+    cout << "B = " << B << endl;
+    cout << "Задача 2 "<< '\n';
+    cout << "Введите значение A = "; 
+    cin >> A;
+    cout << "Введите значение B = "; 
+    cin >> B;
+    cout << "Введите значение C = "; 
+    cin >> C;
+    x = A;
+    A = C;
+    C = B;
+    B = x;
+    cout << "A = " << A << endl;
+    cout << "B = " << B << endl;
+    cout << "C = " << C << endl;
+    cout << "Задача 3 "<< '\n';
+    cout << "Введите значение A = "; 
+    cin >> A;
+    cout << "Введите значение B = "; 
+    cin >> B;
+    cout << "Введите значение C = "; 
+    cin >> C;
+    x = A;
+    A = B;
+    B = C;
+    C = x;
+    cout << "A = " << A << endl;
+    cout << "B = " << B << endl;
+    cout << "C = " << C << endl;
+    cout << "Задача 4 "<< '\n';
+    cout << "Дана функция y=3x^6-6x^2-7 "<< '\n'; 
+    cout << "Введите значение x = "; 
+    cin >> x;
+    y = 3*pow(x,6)-6*pow(x,2)-7;
+    cout << "y = " << y << endl;
+    cout << "Задача 5 "<< '\n';
+    cout << "Дана функция y = 4(x−3)^6 − 7(x−3)^3 + 2"<< '\n';
+    cout << "Введите значение x = "; 
+    cin >> x;
+    y = 4*pow(x-3,6)-7*pow(x-3, 3)+2;
+    cout << "y = " << y << endl;
+    cout << "Задача 6 "<< '\n';
+    cout << "Введите значение A = "; 
+    cin >> A;
+    k = A * A;
+    cout << "A^2 = " << k << endl;
+    k = k * k; 
+    cout << "A^4 = " << k << endl;
+    k = k * k; 
+    cout << "A^8 = " << k << endl;
+    cout << "Задача 7 "<< '\n';
+    cout << "Введите значение A = "; 
+    cin >> A;
+    k = A*A;
+    cout << "A^2 = " << k << endl;
+    x = A*k;
+    cout << "A^3 = " << x << endl;
+    k = x*A*A;
+    cout << "A^5 = " << k << endl;
+    x = k*k;
+    cout << "A^10 = " << x << endl;
+    A = k*x;
+    cout << "A^15 = " << A << endl;
+
+
+
+
+
+
+
+    return 0;
+}

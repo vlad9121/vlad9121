@@ -1,0 +1,97 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <stdio.h>
+using namespace std; 
+
+int main()
+{
+    setlocale(0, "") /*1*/;
+    float x1, y1, x2, y2;
+    cout << "Задача 1 "<< '\n';
+    cout << "Введите координату x1= "; 
+    cin >> x1;
+    cout << "Введите координату y1= "; 
+    cin >> y1;
+    cout << "Введите координату x2= "; 
+    cin >> x2;
+    cout << "Введите координату y2= "; 
+    cin >> y2;
+    float d = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    cout << "Расстояние между точками = " << d << endl;
+    float a, b, c;
+    cout << "Задача 2 "<< '\n';
+     cout << "Введите координату точки A = "; 
+    cin >> a;
+    cout << "Введите координату точки B = "; 
+    cin >> b;
+    cout << "Введите координату точки C = "; 
+    cin >> c;
+    float ac = fabs(c-a);
+    float bc = fabs(c-b);
+    float sum = bc+ac;
+    cout << "Длина AC = " << ac << endl;
+    cout << "Длина BC = " << bc << endl;
+    cout << "Сумма =  " << sum << endl;
+    cout << "Задача 3 "<< '\n';
+    float A, B, C;
+     cout << "Введите координату точки A = "; 
+    cin >> A;
+    cout << "Введите координату точки B = "; 
+    cin >> B;
+    cout << "Введите координату точки C = "; 
+    cin >> C;
+    float AC = fabs(C-A);
+    float BC = fabs(C-B);
+    float PR = BC*AC;
+    if (C > A && C < B) {
+    cout << "Произведение отрезков AC и BC =  " << PR << endl;
+} else if (A > C || C > B) {
+    cout << "Не соблюдается условие " << endl;
+}
+    cout << "Задача 4 "<< '\n';
+    float X1, Y1, X2, Y2;
+    cout << "Введите координату x1= "; 
+    cin >> X1;
+    cout << "Введите координату y1= "; 
+    cin >> Y1;
+    cout << "Введите координату x2= "; 
+    cin >> X2;
+    cout << "Введите координату y2= "; 
+    cin >> Y2;
+    float P = fabs(X2-X1)*2+fabs(Y2-Y1)*2;
+    float S = fabs(X2-X1)*fabs(Y2-Y1);
+    cout << "Площадь прямоугольника =  " << S << endl;
+    cout << "Периметр прямоугольника =  " << P << endl;
+    cout << "Задача 5 "<< '\n';
+    float xx1, yy1, xx2, yy2, xx3, yy3;
+    cout << "Введите координату x1= "; 
+    cin >> xx1;
+    cout << "Введите координату y1= "; 
+    cin >> yy1;
+    cout << "Введите координату x2= "; 
+    cin >> xx2;
+    cout << "Введите координату y2= "; 
+    cin >> yy2;
+    cout << "Введите координату x3= "; 
+    cin >> xx3;
+    cout << "Введите координату y3= "; 
+    cin >> yy3;
+  float aa = sqrt((xx2-xx1)*(xx2-xx1)+(yy2-yy1)*(yy2-yy1));
+ float bb = sqrt((xx3-xx2)*(xx3-xx2)+(yy3-yy2)*(yy3-yy2));
+ float cc = sqrt((xx1-xx3)*(xx1-xx3)+(yy1-yy3)*(yy1-yy3));
+ float p = (aa + bb + cc)/2;
+ float Perim = aa + bb + cc;
+ float Streug = sqrt(p*(p - aa)*(p - bb)*(p - cc));
+ cout << "Площадь треугольника =  " << Streug << endl;
+    cout << "Периметр треугольника =  " << Perim << endl;
+
+
+
+
+
+
+
+
+    return 0;
+}

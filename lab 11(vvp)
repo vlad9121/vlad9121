@@ -1,0 +1,123 @@
+#include <math.h>
+#include <iostream>
+#include <stdio.h>
+#include <map>
+
+using namespace std;
+
+int main()
+{
+int A, B, i;
+i = 0;
+cout << "Задание 1" << endl;
+cout << "Введите число A: ";
+cin >> A;
+cout << "Введите число B: ";
+cin >> B;
+while (A <= B) {
+    while (i < A) {
+        i = i+1;
+        cout << A;
+
+    }
+    cout << endl;
+    A = A + 1;
+    i = 0;
+}
+cout << "Задание 2" << endl;
+int A1, B1, i1;
+cout << "Введите число A: ";
+cin >> A1;
+cout << "Введите число B: ";
+cin >> B1;
+i1 = 0;
+while (B1 <= A1) {
+    i1 = i1 + 1;
+    B1 = B1 + B1;
+}
+cout << "На отрезке длиной A размещено " << i1 << " отрезков длиной B" << endl;
+cout << "Задание 3" << endl;
+int N, K, S;
+K = 0;
+S = 0;
+cout << "Введите число N: ";
+cin >> N;
+while (S < N) {
+    K = K + 1;
+    S = K + S; 
+}
+cout << "Число K = " << K << endl;
+cout << "Сумма = " << S << endl;
+cout << "Задание 4" << endl;
+float S1, P;
+int K1;
+K1 = 0;
+S1 = 1000;
+cout << "Введите процент P  (0 < P < 25), на который каждый месяц увеличивается вклад: ";
+cin >> P;
+while (S1<= 1100 ) {
+    S1 = S1+S1*(P/100);
+    K1 = K1+1;
+
+}
+cout << "Количество месяцев, через которое вклад превысит 1100 рублей: " << K1 << endl;
+cout << "Итоговый размер вклада: " << S1 << endl;
+cout << "Задание 5" << endl;
+int M1, N1, zap1, zap2;
+cout << "Введите число N: ";
+cin >> N1;
+cout <<"Введите число M: ";
+cin >> M1;
+zap1 = N1;
+zap2 = M1;
+
+while  (M1!=N1) {
+if (N1 > M1) {
+    N1 = N1 - M1;
+}
+else if (M1 > N1)  {
+    M1 = M1 - N1;
+}
+}
+if ((N1 > M1) && ((N1 % M1) == 0) && ((zap1 % M1) == 0) && ((zap2 % M1) == 0)) {
+   cout <<"НОД чисел M и N: " << M1 << endl;
+}
+else if ((M1 > N1) && ((M1 % N1) == 0) && ((zap1 % N1) == 0) && ((zap2 % N1) == 0)) {
+    cout <<"НОД чисел M и N: " << N1 << endl; 
+}
+else if ((M1 == N1) && ((zap1 % N1) == 0) && ((zap2 % N1) == 0)) {
+   cout <<"НОД чисел M и N: " << N1 << endl;  
+}
+else {
+    cout << "Эти числа не имеют НОД " << endl;
+}
+cout << "Задание 6" << endl;
+int N2, KN, fab1, fab2, pomn;
+cout << "Введите число N: ";
+cin >> N2;
+fab1 = 1;
+fab2 = 1;
+KN = 2;
+while (N2> fab2) {
+    pomn = fab2;
+    fab2 = fab1+fab2;
+    fab1 = pomn;
+    KN = KN+1;
+}
+if (N2 == fab2)  {
+cout <<"Порядковый номер числа Фибоначчи: " << KN;
+}
+else {
+    cout << "Число не относится к числам Фибоначчи";
+}
+
+
+
+
+
+
+
+
+return 0;
+
+}
